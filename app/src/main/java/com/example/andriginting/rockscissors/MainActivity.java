@@ -46,13 +46,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (tempNumber == 0 ){
             enemyChoice = "Rock";
-            //enemyBoard.setImageResource(R.drawable.blabla) -> kau isi pake gambar sendiri
+            enemyBoard.setImageResource(R.drawable.rock);
         }else if (tempNumber == 1){
             enemyChoice = "Paper";
-            //enemyBoard.setImageResource(R.drawable.blabla) -> kau isi pake gambar sendiri
+            enemyBoard.setImageResource(R.drawable.paper);
         }else{
             enemyChoice = "Scissor";
-            //enemyBoard.setImageResource(R.drawable.blabla) -> kau isi pake gambar sendiri
+            enemyBoard.setImageResource(R.drawable.scissors);
         }
 
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             result = "Draw";
         }
 
-        Toast.makeText(this,result,Toast.LENGTH_SHORT);
+        Toast.makeText(this,result,Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -77,20 +77,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.rock_button:
                 userChoice = "Rock";
-                //userBoard.setImageResource(R.drawable.blabla) -> kau isi pake gambar sendiri
+                userBoard.setImageResource(R.drawable.rock);
                 calculateScore();
 
                 break;
 
             case R.id.paper_button:
                 userChoice = "Paper";
-                //userBoard.setImageResource(R.drawable.blabla) -> kau isi pake gambar sendiri
+                userBoard.setImageResource(R.drawable.paper);
                 calculateScore();
                 break;
 
             case R.id.scissor_button:
                 userChoice = "Scissor";
-                //userBoard.setImageResource(R.drawable.blabla) -> kau isi pake gambar sendiri
+                userBoard.setImageResource(R.drawable.scissors);
                 calculateScore();
                 break;
         }

@@ -18,8 +18,7 @@
         android:layout_marginEnd="87dp"
         android:layout_marginRight="87dp"
         android:layout_toStartOf="@+id/user_side"
-        android:layout_toLeftOf="@+id/user_side"
-        android:background="@color/colorAccent" />
+        android:layout_toLeftOf="@+id/user_side" />
 
     <ImageView
         android:id="@+id/user_side"
@@ -30,8 +29,36 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        android:background="@color/colorAccent" />
+        android:layout_marginRight="41dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="You"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:text="Your fuckin Enemy"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
 
 
     <LinearLayout
